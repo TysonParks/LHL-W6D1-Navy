@@ -1,5 +1,5 @@
 --DROP PREVIOUS TABLES
-DROP TABLE IF EXISTS fleet, ships, sailors, tourOfDuty, ships_tourOfDuty;
+DROP TABLE IF EXISTS navy_schema.fleet, navy_schema.ships, navy_schema.sailors, navy_schema.tourOfDuty, navy_schema.ships_tourOfDuty;
 
 
 --CREATE TABLES
@@ -27,7 +27,7 @@ CREATE TABLE tourOfDuty
   tourOfDuty_name VARCHAR(50),
   tourOfDuty_rank VARCHAR(50),
   start_date VARCHAR(50),
-  end_date VARCHAR(50),
+  end_date VARCHAR(50)
 );
 
 CREATE TABLE ships_tourOfDuty
@@ -40,7 +40,7 @@ CREATE TABLE ships_tourOfDuty
 --INSERT DATA
 INSERT INTO fleet (id, fleet_name)
 VALUES
-(1, "Pacific")
+(1, "Pacific"),
 (2, "Atlantic"),
 (3, "Arctic");
 
